@@ -1,0 +1,113 @@
+<!-- 
+<h1>Add Product</h1>
+
+<form action="/dataCreate" method="post" >
+    <input type="hidden" name="id" value="<%= (editData) ? editData._id : '' %>">
+    
+    <label>Product Name:</label>
+    <input type="text" name="ProductName" required  value="<%= (editData) ? editData.ProductName : '' %>"><br>
+    
+    <label>Product Code:</label>
+    <input type="number" name="ProductCode" required  value="<%= (editData) ? editData.ProductCode : '' %>"><br>
+    
+    <label>Product Price:</label>
+    <input type="number" name="ProductPrise" required  value="<%= (editData) ? editData.ProductPrise : '' %>"><br>
+    
+    <input type="submit"  id="" name="" >
+</form> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/dataCreate" method="post">
+        <h1>Add Product</h1>
+
+        <input type="hidden" name="id" value="<%= (editData) ? editData._id : '' %>">
+        
+        <label>Product Name:</label>
+        <input type="text" name="ProductName" required value="<%= (editData) ? editData.ProductName : '' %>">
+        
+        <label>Product Code:</label>
+        <input type="number" name="ProductCode" required value="<%= (editData) ? editData.ProductCode : '' %>">
+        
+        <label>Product Price:</label>
+        <input type="number" name="ProductPrise" required value="<%= (editData) ? editData.ProductPrise : '' %>">
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #01e37f;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            list-style: none;
+        }
+
+        .card {
+            width: 600px;
+            height: 150px;
+            background-color: #9be010;
+            background: linear-gradient(230deg, #96e001, #e5f89e);
+            overflow: hidden;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .box-25 {
+            width: 25%;
+            height: 150px;
+            border-radius: 10px 0px 0px 10px;
+            overflow: hidden;
+            border-right: 1px solid #fff;
+            align-items: center;
+            display: flex;
+        }
+
+        .box-25 img {
+            width: 100%;
+            mix-blend-mode: multiply;
+        }
+
+        .box-40 {
+            width: 45%;
+            margin-left: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .product-content h2 {
+            color: #2D2727;
+        }
+
+        .product-content span {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .a-i-b {
+            align-items: baseline;
+        }
+
+        .product-prise h1 {
+            color: #ff3f40;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .product-prise {
+            margin: 10px 0px;
+        }
+
+        .buy--btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            font-size: 0.8em;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+            color: #fff;
+            background-color: #ff3f40;
+            box-shadow: 2px 2px 25px -7px #4c4c4c;
+            cursor: pointer;
+        }
+
+        .buy--btn:active {
+            transform: scale(0.97);
+        }
+
+        .box-35 {
+            width: 30%;
+        }
+
+        .productselect-heading h5 {
+            color: #2D2727;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .productselect-heading ul {
+            width: 100px;
+            margin: auto;
+        }
+
+        .productselect-heading li {
+            width: 35px;
+            height: 35px;
+            padding: 3px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .productselect-heading li img {
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+        }
+
+        .productselect-heading li:first-child,
+        .productselect-heading li:hover {
+            border: 1px solid #a6a6a6;
+        }
+
+        .productselect-heading li:not(:first-child) {
+            margin-left: 0.1em;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .main-head h1 {
+            font-size: 50px;
+            justify-content: center;
+            width: 450px;
+            background: linear-gradient(230deg, #96e001, #e5f89e);
+            height: 100px;
+            align-items: center;
+            transform: skewX(-20deg);
+            display: flex;
+            position: relative;
+            border: 1px solid #ff3f40;
+            color: #ff3f40;
+        }
+
+        .main-head h1::before {
+            position: absolute;
+            width: 20px;
+            left: 10px;
+            height: 100%;
+            background-color: #96e001;
+            content: "";
+        }
+
+        .main-head h1::after {
+            position: absolute;
+            width: 20px;
+            right: 10px;
+            height: 100%;
+            background-color: #e5f89e;
+            content: "";
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+    
+    
+
+
+    
+
+
+    
+    
+    
+    
+    
+     <div class="w-100">
+        <div class="main-head">
+            <h1>Fruit Sale</h1> 
+        </div>
+        <a href="/form"><button>Add Product</button></a>
+        
+    </div> 
+    <div class="w-100">
+        <div class="flex flex-wrap">
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://thumbs.dreamstime.com/b/green-apple-leaf-slice-isolated-white-ripe-background-clipping-path-45471482.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Apples</h2>
+                                <span>CODE: 00001</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>10.93</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
+                                            alt="green apple"></li>
+                                    <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://w7.pngwing.com/pngs/312/397/png-transparent-watermelon-fruit-flavor-peeler-watermelon-natural-foods-food-sweetness.png"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Watermelon </h2>
+                                <span>CODE: 00002</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>40.33</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://thumbs.dreamstime.com/b/sliced-watermelon-25612609.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://www.kroger.com/product/images/large/front/0000000004032"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBH3GFWT52Mj8kewRERw2GOjvAQPPfa0koekGQNCxAkQFfUmEyxkJOacWrEtffs12HdbQNCk7KnM&usqp=CAU&ec=48665698"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://thumbs.dreamstime.com/b/orange-fruit-green-leaves-isolated-white-background-clipping-path-full-depth-field-fresh-177726692.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Orange</h2>
+                                <span>CODE: 00003</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>23.67</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Orange-Fruit-Pieces.jpg/2560px-Orange-Fruit-Pieces.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://thumbs.dreamstime.com/b/orange-fruit-22884921.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://thumbs.dreamstime.com/b/orange-fruit-green-leaves-isolated-white-background-clipping-path-full-depth-field-fresh-177726692.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://media.istockphoto.com/id/494037460/photo/orange-fruit-isolated-on-a-white-background.jpg?b=1&s=170667a&w=0&k=20&c=UNtzGh4-Zv2LN2KW7tfF6SYbP_GFrjPzmE-D4T6xTVA="
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://th-thumbnailer.cdn-si-edu.com/XZ5lC_kAE9F_dtm9BrB8Vx_c9lA=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/39/3c/393c51d9-ce11-49ce-9d41-5ef599dfabea/bn8e34.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Strawberry</h2>
+                                <span>CODE: 00004</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>33.23</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://thumbs.dreamstime.com/b/three-strawberries-strawberry-leaf-white-background-114284301.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://thumbs.dreamstime.com/b/strawberry-9656992.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://images.freeimages.com/images/large-previews/a63/strawberry-1324985.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://media.istockphoto.com/id/1157946861/photo/red-berry-strawberry-isolated.jpg?s=612x612&w=0&k=20&c=HyxZMbI_e-vDJbrzZkTz5zWCAo1mBEzWbvVlyigbi-E="
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://cdn.shopify.com/s/files/1/0574/4754/6925/products/Guava_700x700.png?v=1657427345"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Guava</h2>
+                                <span>CODE: 00005</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>16.87</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://t3.ftcdn.net/jpg/03/08/44/22/360_F_308442270_cH4cpqdjrZsMwMtJX3P9T813ZynNKF4n.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://i.pinimg.com/originals/7e/3f/0d/7e3f0d9df14b808d8b3e892da5b62cec.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://i.pinimg.com/originals/3c/2d/c2/3c2dc2b7418c1fa2e7e586a75e8f80b1.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://5.imimg.com/data5/SELLER/Default/2022/10/EB/WT/PN/6862249/fresh-guava-fruit-1000x1000.jpg"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://thumbs.dreamstime.com/b/pineapple-slices-isolated-white-30985039.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Pineapple</h2>
+                                <span>CODE: 00006</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>67.46</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://media.istockphoto.com/id/172862474/photo/pineapple-a-ripe-fresh-fruit-food-whole-isolated-on-white.jpg?s=612x612&w=0&k=20&c=NIXw8LVGZ3doNXMn9st9nuyL8WFqPNC4VxPf8V4xf7w="
+                                            alt="green apple"></li>
+                                    <li><img src="https://thumbs.dreamstime.com/b/pineapple-slices-isolated-white-30985039.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://2hrsdelivery.in/wp-content/uploads/2021/12/buy-pineapple-online-bulk-fresh-fruit-in-india-bangalore-karnataka.jpg"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://media.istockphoto.com/id/834807852/photo/whole-kiwi-fruit-and-half-kiwi-fruit-on-white.jpg?s=612x612&w=0&k=20&c=zliUVnZlYPcOxEDYef7PMmOEEODFr8FUkTYqqFVaRG8="
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Kiwi</h2>
+                                <span>CODE: 00007</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>31.22</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://www.bigbasket.com/media/uploads/p/l/20000911-2_39-fresho-kiwi-green.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://www.frutas-hortalizas.com/img/fruites_verdures/presentacio/14.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6GQj9urYIkwWxpq-iBL8L2laK7Nh5_zAZSwuw8jfKJc7R0ATvjJmsgV_DqCUlczvtJZ50b8S2fs&usqp=CAU&ec=48665698"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="card">
+                    <div class="flex">
+                        <div class="box-25">
+                            <img src="https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-40">
+                            <div class="product-content">
+                                <h2>Delicious Mango</h2>
+                                <span>CODE: 00008</span>
+                            </div>
+                            <div class="product-prise flex a-i-b">
+                                <span>Rs</span>
+                                <h1>51.32</h1>
+                            </div>
+                            <div class="product-button">
+                                <button class="buy--btn">Details</button>
+
+                            </div>
+                        </div>
+                        <div class="box-35">
+                            <div class="productselect-heading">
+                                <h5>SELECT A FRUIT</h5>
+                                <ul class="flex flex-wrap">
+                                    <li><img src="https://img.freepik.com/premium-photo/ripe-yellow-mango-with-cut-half-green-leaf-isolated-white-surface_252965-894.jpg"
+                                            alt="green apple"></li>
+                                    <li><img src="https://img.freepik.com/premium-vector/mango-isolated-white-background_114835-24910.jpg"
+                                            alt="yellow apple"></li>
+                                    <li><img src="https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg"
+                                            alt="orange apple"></li>
+                                    <li><img src="https://static.vecteezy.com/system/resources/previews/011/502/022/original/an-illustration-of-cute-mango-fruit-hand-drawn-cartoon-free-png.png"
+                                            alt="red apple"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    
+ 
+
+    
+
+    <div class="w-100">
+        <div class="flex flex-wrap">
+            <% allData.forEach(product=> { %>
+                <div class="w-50">
+                    <div class="card">
+                        <div class="flex">
+                            <div class="box-25">
+                                <img src="<%= product.ProductImage %>" alt="Product Image">
+                            </div>
+                            <div class="box-40">
+                                <div class="product-content">
+                                    <h2><%= product.ProductName %></h2>
+                                    <span>CODE: <%= product.ProductCode %></span>
+                                </div>
+                                <div class="product-prise flex a-i-b">
+                                    <span>Rs</span>
+                                    <h1><%= product.ProductPrise %></h1>
+                                </div>
+                                <div class="product-button">
+                                    <button class="buy--btn">Details</button>
+                                </div>
+                            </div>
+
+
+                            <div class="box-35">
+                                <div class="productselect-heading">
+                                    <h5>SELECT A FRUIT</h5>
+                                    <ul class="flex flex-wrap">
+                                        <li> <img src="" alt=""></li>
+                                        <li> <img src="" alt=""></li>
+                                        <li> <img src="" alt=""></li>
+                                        <li> <img src="" alt=""></li>
+                                    </ul>
+                                </div>  
+                                <button><a href="/deleteData/<%=product._id%>">delete</a></button>
+                                <button><a href="/editData/<%=product._id%>">update</a></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+  
+     
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
